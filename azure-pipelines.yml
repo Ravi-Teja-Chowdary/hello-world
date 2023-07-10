@@ -13,6 +13,13 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 10.176.204.4 
+    sourceFolder: # string. Source folder. 
+    contents: '**' # string. Required. Contents. Default: **.
+    #targetFolder: # string. Target folder.
+
 # - script: |
 #     echo Add other tasks to build, test, and deploy your project.
 #     echo See https://aka.ms/yaml
