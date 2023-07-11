@@ -20,7 +20,7 @@ steps:
       10.176.204.6
     AdminUserName: 'QA\289391'
     AdminPassword: 'GvM^^Y7rYd^q&8'
-    TargetPath: 'C:\testfolder'
+    TargetPath: 'C:\Users\289391\testfolder'
 
 # - script: |
 #     echo Add other tasks to build, test, and deploy your project.
