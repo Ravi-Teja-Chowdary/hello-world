@@ -12,13 +12,15 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
-- task: CopyFilesOverSSH@0
+- task: WindowsMachineFileCopy@2
   inputs:
-    sshEndpoint: 10.176.204.4 
-    sourceFolder: # string. Source folder. 
-    contents: '**' # string. Required. Contents. Default: **.
-    #targetFolder: # string. Target folder.
+    SourcePath: 'C:\Users\289391\Desktop\testtext.txt'
+    MachineNames: |
+      10.176.204.4, 
+      10.176.204.6
+    AdminUserName: 'QA\289391'
+    AdminPassword: 'GvM^^Y7rYd^q&8'
+    TargetPath: 'C:\testfolder'
 
 # - script: |
 #     echo Add other tasks to build, test, and deploy your project.
