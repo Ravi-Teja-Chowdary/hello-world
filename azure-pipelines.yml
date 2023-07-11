@@ -14,13 +14,13 @@ steps:
   displayName: 'Run a one-line script'
 - task: WindowsMachineFileCopy@2
   inputs:
-    SourcePath: 'C:\Users\289391\Desktop\testtext.txt'
+    SourcePath: 'C:\testsourcefolder\testtext.txt'
     MachineNames: |
       10.176.204.4, 
       10.176.204.6
     AdminUserName: 'QA\289391'
     AdminPassword: 'GvM^^Y7rYd^q&8'
-    TargetPath: 'C:\Users\289391\testfolder'
+    TargetPath: 'C:\testfolder'
 
 # - script: |
 #     echo Add other tasks to build, test, and deploy your project.
